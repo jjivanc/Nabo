@@ -11,7 +11,7 @@ from webscraping import link_s
 #Teste_s = teste_
 
 client = commands.Bot(command_prefix=".")
-token = os.getenv("NzgzMDg2ODc0NjA4MjcxMzkx.X8Voew.oMcuc3G9Ddr4BAd319-mfY6ZkmU")
+token = os.getenv("DISCORD_TOKEN")
 
 @client.event
 async def on_ready() :
@@ -63,4 +63,4 @@ async def imagen(ctx,*,text):
 
     await ctx.send(link)
 
-client.run("NzgzMDg2ODc0NjA4MjcxMzkx.X8Voew.oMcuc3G9Ddr4BAd319-mfY6ZkmU")
+client.run(token)
